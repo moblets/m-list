@@ -85,9 +85,13 @@ module.exports = {
        */
       showDetail: function(detailIndex) {
         if (isDefined($stateParams.detail) && $stateParams.detail !== "") {
-          var itemIndex = _.findIndex($scope.items, function(item) {
-            return item.id.toString() === $stateParams.detail;
-          });
+            var itemIndex = _.findIndex($scope.items, function(item) {
+              if(item.id !== undefined){
+                return item.id.toString() === $stateParams.detail;
+              } else {
+                return;
+              }
+            });
           if (itemIndex === -1) {
             dataLoadOptions = {
               //offset: $scope.items === undefined ? 0 : $scope.items.length,
@@ -155,7 +159,7 @@ module.exports = {
             });
           } 
           else {
-            list.setView($scope.items, true);
+            list.setView($scope.items, false);
           }
       },
       /**
