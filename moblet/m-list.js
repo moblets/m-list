@@ -155,7 +155,7 @@ module.exports = {
             });
           } 
           else {
-            list.setView($scope.items, true);
+            list.setView($scope.items, false);
           }
       },
       /**
