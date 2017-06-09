@@ -95,7 +95,7 @@ module.exports = {
           if (itemIndex === -1) {
             dataLoadOptions = {
               //offset: $scope.items === undefined ? 0 : $scope.items.length,
-              items: 100,
+              items: $scope.items + 25,
               cache: false
             };
             list.load(false, function() {
