@@ -15,9 +15,9 @@
     "placeholder": "My title"
   },
   "resume": {
-    "label": "Descrição",
-    "hint": "Descrição do item",
-    "placeholder": "Minha descrição"
+    "label": "Description",
+    "hint": "Item description",
+    "placeholder": "My description"
   },
   "description": {
     "label": "Content",
