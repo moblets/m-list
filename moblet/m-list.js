@@ -170,7 +170,7 @@ module.exports = {
         $stateParams.pageTitle = null;
         dataLoadOptions = {
           offset: 0,
-          items: 25,
+          items: 1000,
           listKey: 'items',
           cache: false
         };
