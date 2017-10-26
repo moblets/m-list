@@ -2,7 +2,6 @@
   <m-content reload="load" more="more" >-->
     <!-- LIST -->
     <div class="list" ng-if="!isDetail">
-      
       <!-- CARD STYLE -->
       <div ng-if="isCard" class="item style-card" ng-repeat="(key, item) in items"
            ng-click="goTo(item)">
@@ -13,6 +12,7 @@
           <m-img encode="true" src="item.image"></m-img>
       </div>
       <!-- LIST ITEM -->
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
       <div ng-if="isList" class="item style-list" ng-repeat="(key, item) in items"
            ng-click="goTo(item)">
 				<div class="img-container" ng-if="isList">
