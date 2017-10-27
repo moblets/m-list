@@ -41,7 +41,7 @@
     },
 
     {
-      "name": "listStyle",
+      "name": "otherStyle",
       "type": "select",
       "required": true,
       "values": {
