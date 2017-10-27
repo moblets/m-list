@@ -1,11 +1,6 @@
 {
   "fields": [
     {
-      "name": "listStyle",
-      "type": "checkbox",
-      "required": false
-    },
-    {
       "name": "items",
       "type": "list",
       "has-details": true,
@@ -35,6 +30,16 @@
         }
       ]
     },
+    {
+      "name": "listStyle",
+      "type": "select",
+      "required": true,
+      "values": {
+        "layout-1": "list_type_1",
+        "layout-2": "list_type_2"
+      }
+    },
+
     {
       "name": "listStyle",
       "type": "select",
