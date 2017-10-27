@@ -1,6 +1,11 @@
 {
   "fields": [
     {
+      "name": "listStyle",
+      "type": "checkbox",
+      "required": false
+    },
+    {
       "name": "items",
       "type": "list",
       "has-details": true,
