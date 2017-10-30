@@ -1,5 +1,11 @@
 {
   "fields": [
+
+    {
+      "name": "search",
+      "type": "checkbox",
+      "required": false
+    },
     {
       "name": "items",
       "type": "list",
