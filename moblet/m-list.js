@@ -176,27 +176,11 @@ module.exports = {
         $mDataLoader.load($scope.moblet, dataLoadOptions)
           .then(function(data) {
             list.setView(data);
-            //dadosIniciais = Object.assign({}, data.items);
-            //dadosIniciais = Object.freeze(dadosIniciais);
-
-            // function clone(obj) {
-            //   if(obj == null || typeof(obj) != 'object')
-            //       return obj;    
-            //   var temp = new obj.constructor(); 
-            //   for(var key in obj)
-            //       temp[key] = clone(obj[key]);    
-            //   return temp;
-            // }
 
             dadosIniciais = JSON.stringify(data.items);
             dadosIniciais = JSON.parse(dadosIniciais);
 
-            //dadosIniciais.forEach(Object.freeze);
-
-            //dadosIniciais = clone(data.items);
-
             console.log(dadosIniciais, "dadosIniciais");
-
 
             if (typeof callback === 'function') {
               callback();
