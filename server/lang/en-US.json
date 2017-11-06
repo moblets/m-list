@@ -25,7 +25,7 @@
     "placeholder": "My content"
   },
   "search": {
-    "label": "Ativar busca nessa aba"
+    "label": "Enable search on this tab"
   },
   "listStyle": {
     "label": "List style",

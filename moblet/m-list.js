@@ -208,15 +208,10 @@ module.exports = {
       more: function() {
         // Add the items to the offset
         dataLoadOptions.offset += dataLoadOptions.items;
-          if(!$scope.isDetail){
           $mDataLoader.load($scope.moblet, dataLoadOptions)
             .then(function(data) {
               list.setView(data, true);
             });
-          } 
-          else {
-            list.setView($scope.items, false);
-          }
       },
       /**
        * Initiate the list moblet:
