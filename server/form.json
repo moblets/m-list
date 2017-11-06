@@ -1,9 +1,8 @@
 {
   "fields": [
-
     {
       "name": "search",
-      "type": "checkbox",
+      "type": "toggle",
       "required": false
     },
     {

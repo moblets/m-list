@@ -37,6 +37,8 @@ module.exports = {
           $scope.isCard = data.listStyle === "layout-2";
           $scope.isList = isDefined(data.listStyle) ? data.listStyle === "layout-1" : true;
 
+          $scope.hasSearch = isDefined(data.hasSearch) ? data.hasSearch === true : false;
+
           // If it was called from the "more" function, concatenate the items
           $scope.items = (more) ? $scope.items.concat(data.items) : data.items;
 

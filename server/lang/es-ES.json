@@ -24,6 +24,9 @@
     "hint": "Llenar el contenido utilizando el editor de texto",
     "placeholder": "Mi contenido"
   },
+  "search": {
+    "label": "Ativar busca nessa aba"
+  },
   "listStyle": {
     "label": "Estilo de lista",
     "hint": "Elija el estilo de lista del contenido",

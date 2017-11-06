@@ -24,6 +24,9 @@
     "hint": "Fill the content with HTML using the text editor",
     "placeholder": "My content"
   },
+  "search": {
+    "label": "Ativar busca nessa aba"
+  },
   "listStyle": {
     "label": "List style",
     "hint": "Choose the content list style",
