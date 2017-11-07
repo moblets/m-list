@@ -1,11 +1,6 @@
 {
   "fields": [
     {
-      "name": "search",
-      "type": "toggle",
-      "required": false
-    },
-    {
       "name": "items",
       "type": "list",
       "has-details": true,
@@ -34,6 +29,11 @@
           "min-length": 3
         }
       ]
+    },
+    {
+      "name": "search",
+      "type": "toggle",
+      "required": false
     },
     {
       "name": "listStyle",
