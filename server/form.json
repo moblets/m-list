@@ -1,11 +1,5 @@
 {
   "fields": [
-
-    {
-      "name": "search",
-      "type": "checkbox",
-      "required": false
-    },
     {
       "name": "items",
       "type": "list",
@@ -35,6 +29,11 @@
           "min-length": 3
         }
       ]
+    },
+    {
+      "name": "search",
+      "type": "toggle",
+      "required": false
     },
     {
       "name": "listStyle",
