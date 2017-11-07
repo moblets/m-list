@@ -34,6 +34,10 @@ module.exports = {
           $scope.emptyData = false;
           $scope.itemStyle = data.itemStyle;
 
+          if (data.search === true) {
+            $rootScope.$broadcast('hideShowSearch' , {data});
+          }
+
           $scope.isCard = data.listStyle === "layout-2";
           $scope.isList = isDefined(data.listStyle) ? data.listStyle === "layout-1" : true;
 
