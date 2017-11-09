@@ -35,7 +35,7 @@ module.exports = {
           $scope.itemStyle = data.itemStyle;
 
           if (data.search === true) {
-            $rootScope.$broadcast('hideShowSearch' , {data});
+            $rootScope.$broadcast('hideShowSearch', {data});
           }
 
           $scope.isCard = data.listStyle === "layout-2";
@@ -73,15 +73,14 @@ module.exports = {
           $rootScope.$broadcast('show-search');
         }
 
-        $scope.$on("$destroy", function(){
+        $scope.$on("$destroy", function() {
           if (!$scope.isDetail) {
             console.log("Hide Lupe");
             $rootScope.$broadcast('hide-search');
-          }    
+          }
         });
 
-        $scope.$on("update-data", function(event, args) { 
-
+        $scope.$on("update-data", function(event, args) {
           console.log(document.getElementById('input-search').style.color);
 
           if ($scope.items.length < dadosIniciais.length) {
@@ -94,23 +93,21 @@ module.exports = {
           
           var quant_destroy = $scope.items.length - args.response.results.length;
 
-          //popula os itens encontrados
+          // popula os itens encontrados
           for (var i = 0; i <= args.response.results.length -1; i++) {
-              $scope.items[i].description = args.response.results[i].item.description;
-              $scope.items[i].id = args.response.results[i].item.id;
-              $scope.items[i].image = args.response.results[i].item.image;
-              $scope.items[i].resume = args.response.results[i].item.resume;
-              $scope.items[i].title = args.response.results[i].item.title;
+            $scope.items[i].description = args.response.results[i].item.description;
+            $scope.items[i].id = args.response.results[i].item.id;
+            $scope.items[i].image = args.response.results[i].item.image;
+            $scope.items[i].resume = args.response.results[i].item.resume;
+            $scope.items[i].title = args.response.results[i].item.title;
           }
 
-          //destroi os itens desnecessarios
-          while(quant_destroy > 0) {
-            $scope.items.splice(-1,1)  
+          // destroi os itens desnecessarios
+          while (quant_destroy > 0) {
+            $scope.items.splice(-1, 1);
             quant_destroy--;
           }
-
         });
-
 
         // If the view is showing the detail, call showDetail
         if ($scope.items.length === 1) {
@@ -131,24 +128,22 @@ module.exports = {
       isDetail: function() {
         return $stateParams.detail !== "";
       },
-      /**
-       * Show the detail getting the index from $stateParams.detail. Set "item"
-       * to the selected detail
-       */
+
+      // Show the detail getting the index from $stateParams.detail. Set "item"
+      // to the selected detail
       showDetail: function(detailIndex) {
         if (isDefined($stateParams.detail) && $stateParams.detail !== "") {
-
-            var itemIndex = _.findIndex($scope.items, function(item) {
-              if(item.id !== undefined){
-                return item.id.toString() === $stateParams.detail;
-              } else {
-                return;
-              }
-            });
+          var itemIndex = _.findIndex($scope.items, function(item) {
+            if (item.id !== undefined) {
+              return item.id.toString() === $stateParams.detail;
+            } else {
+              return;
+            }
+          });
 
           if (itemIndex === -1) {
             dataLoadOptions = {
-              //offset: $scope.items === undefined ? 0 : $scope.items.length,
+              // offset: $scope.items === undefined ? 0 : $scope.items.length,
               items: 1000,
               cache: false
             };
@@ -212,10 +207,10 @@ module.exports = {
       more: function() {
         // Add the items to the offset
         dataLoadOptions.offset += dataLoadOptions.items;
-          $mDataLoader.load($scope.moblet, dataLoadOptions)
-            .then(function(data) {
-              list.setView(data, true);
-            });
+        $mDataLoader.load($scope.moblet, dataLoadOptions)
+          .then(function(data) {
+            list.setView(data, true);
+          });
       },
       /**
        * Initiate the list moblet:
