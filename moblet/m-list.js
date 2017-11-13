@@ -70,7 +70,7 @@ module.exports = {
         $rootScope.$broadcast('scroll.infiniteScrollComplete');
 
         if (!$scope.isDetail) {
-          $rootScope.$broadcast('show-search');
+          $rootScope.$broadcast('show-search', {data});
         }
 
         $scope.$on("update-data", function(event, args) { 
