@@ -32,8 +32,7 @@
     },
     {
       "name": "search",
-      "type": "toggle",
-      "required": false
+      "type": "toggle"
     },
     {
       "name": "listStyle",
