@@ -73,13 +73,6 @@ module.exports = {
           $rootScope.$broadcast('show-search');
         }
 
-        $scope.$on("$destroy", function(){
-          if (!$scope.isDetail) {
-            console.log("Hide Lupe");
-            $rootScope.$broadcast('hide-search');
-          }    
-        });
-
         $scope.$on("update-data", function(event, args) { 
 
           console.log(document.getElementById('input-search').style.color);
