@@ -174,6 +174,8 @@ module.exports = {
           .then(function(data) {
             list.setView(data);
 
+            $rootScope.$broadcast('hide-search-refresh');
+
             dadosIniciais = JSON.stringify(data.items);
             dadosIniciais = JSON.parse(dadosIniciais);
 
