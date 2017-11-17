@@ -15,7 +15,7 @@ module.exports = {
     $filter,
     $timeout,
     $mState,
-    $stateParams,
+      $stateParams,
     $mDataLoader
   ) {
     var dadosIniciais = [];
@@ -33,6 +33,7 @@ module.exports = {
           $scope.error = false;
           $scope.emptyData = false;
           $scope.itemStyle = data.itemStyle;
+          var origData = JSON.stringify(data.items);
 
           if (data.search === true) {
             $rootScope.$broadcast('hideShowSearch', {data});
@@ -112,6 +113,12 @@ module.exports = {
 
         // Remove the loading animation
         $scope.moblet.isLoading = false;
+
+        $scope.$on("check-update-data", function(event, args) { 
+            if ($scope.items.length < dadosIniciais.length) {
+              $scope.items = JSON.parse(origData);
+            }
+        });
       },
       /**
        * Check if the view is showing a detail or the list. The function checks
