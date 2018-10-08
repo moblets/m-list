@@ -1,6 +1,6 @@
 {
  "fields": [
-   "items": {
+   {
      "name": "items",
      "type": "list",
      "has-details": true,
@@ -30,11 +30,11 @@
        }
      ]
    },
-   "search": {
+   {
      "name": "search",
      "type": "toggle"
    },
-   "listStyle": {
+   {
      "name": "listStyle",
      "type": "select",
      "required": true,
@@ -43,7 +43,7 @@
        "layout-2": "list_type_2"
      }
    },
-   "itemStyle": {
+   {
      "name": "itemStyle",
      "type": "select",
      "required": true,
