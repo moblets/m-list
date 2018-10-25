@@ -6,6 +6,7 @@ module.exports = {
   template: 'm-list.html',
   i18n: {
     pt: "lang/pt-BR.json",
+    es: "lang/es-ES.json",
     en: "lang/en-US.json"
   },
   link: function() {},
