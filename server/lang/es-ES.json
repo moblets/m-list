@@ -15,14 +15,17 @@
     "placeholder": "Mi título"
   },
   "resume": {
-    "label": "Descrição",
-    "hint": "Descrição do item",
-    "placeholder": "Minha descrição"
+    "label": "Descripción",
+    "hint": "Descripción del contenido",
+    "placeholder": "Mi descripción"
   },
   "description": {
     "label": "Contenido",
     "hint": "Llenar el contenido utilizando el editor de texto",
     "placeholder": "Mi contenido"
+  },
+  "search": {
+    "label": "Habilita la búsqueda en esta pestaña"
   },
   "listStyle": {
     "label": "Estilo de lista",
