@@ -5,7 +5,7 @@
     "description": "Rellene los campos para crear una lista de contenido",
     "version": 2
   },
-  "locations": {
+  "items": {
     "label": "Lista de contenido",
     "hint": "Insertar el contenido",
     "list_button": "Añadir artículos"

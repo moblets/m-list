@@ -5,7 +5,7 @@
     "description": "Fill the fields below to create a list of content",
     "version": 2
   },
-  "locations": {
+  "items": {
     "label": "Content list",
     "hint": "Insert the content",
     "list_button": "Add items"
