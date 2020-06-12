@@ -25,6 +25,9 @@
     "hint": "Fill the content with HTML using the text editor",
     "placeholder": "My content"
   },
+  "image": {
+    "label": "Image"
+  },
   "search": {
     "label": "Enable search on this tab"
   },

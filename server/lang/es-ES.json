@@ -25,6 +25,9 @@
     "hint": "Llenar el contenido utilizando el editor de texto",
     "placeholder": "Mi contenido"
   },
+  "image": {
+    "label": "Imagen"
+  },
   "search": {
     "label": "Habilita la búsqueda en esta pestaña"
   },

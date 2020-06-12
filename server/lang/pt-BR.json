@@ -26,6 +26,9 @@
     "hint": "Preencha com o conteúdo em HTML usando o editor de texto",
     "placeholder": "Meu conteúdo"
   },
+  "image": {
+    "label": "Imagem"
+  },
   "search": {
     "label": "Ativar busca nesta aba"
   },
