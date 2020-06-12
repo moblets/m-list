@@ -30,18 +30,6 @@
           ]
         },
         {
-          "name": "description",
-          "type": "richtext",
-          "required": true,
-          "minlength": 3,
-          "maxlength": 12000,
-          "validations": [
-            { "name": "required" },
-            { "name": "minLength", "value": 3 },
-            { "name": "maxLength", "value": 12000 }
-          ]
-        },
-        {
           "name": "image",
           "type": "imageUploader",
           "api": "moblet-api",
@@ -54,6 +42,18 @@
           "maxSize": 12000000,
           "required": true,
           "validations": [{ "name": "required" }]
+        },
+        {
+          "name": "description",
+          "type": "richtext",
+          "required": true,
+          "minlength": 3,
+          "maxlength": 12000,
+          "validations": [
+            { "name": "required" },
+            { "name": "minLength", "value": 3 },
+            { "name": "maxLength", "value": 12000 }
+          ]
         }
       ]
     },
