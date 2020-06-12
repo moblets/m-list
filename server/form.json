@@ -76,8 +76,8 @@
       "type": "select",
       "required": true,
       "options": [
-        { "value": "layout-1", "name": "list_type_1" },
-        { "value": "layout-2", "name": "list_type_2" }
+        { "value": "layout-1", "name": "item_type_1" },
+        { "value": "layout-2", "name": "item_type_2" }
       ],
       "validations": [{ "name": "required" }]
     }
