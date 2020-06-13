@@ -69,6 +69,10 @@
         { "value": "layout-1", "name": "list_type_1" },
         { "value": "layout-2", "name": "list_type_2" }
       ],
+      "values": {
+        "layout-1": "list_type_1",
+        "layout-2": "list_type_2"
+      },
       "validations": [{ "name": "required" }]
     },
     {
@@ -79,6 +83,10 @@
         { "value": "layout-1", "name": "item_type_1" },
         { "value": "layout-2", "name": "item_type_2" }
       ],
+      "values": {
+        "layout-1": "list_type_1",
+        "layout-2": "list_type_2"
+      },
       "validations": [{ "name": "required" }]
     }
   ]
