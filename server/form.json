@@ -48,11 +48,11 @@
           "type": "richtext",
           "required": true,
           "minlength": 3,
-          "maxlength": 30000,
+          "maxlength": 250000,
           "validations": [
             { "name": "required" },
             { "name": "minLength", "value": 3 },
-            { "name": "maxLength", "value": 30000 }
+            { "name": "maxLength", "value": 250000 }
           ]
         }
       ]
